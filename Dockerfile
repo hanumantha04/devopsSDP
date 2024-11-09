@@ -4,11 +4,10 @@ WORKDIR /app
 
 COPY . /app
 
+COPY requirements.txt /app/
 
-
-RUN pip install flask flask_sqlalchemy flask-wtf
-
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python","app.py"]
 
-EXPOSE 5000
+EXPOSE 5001
