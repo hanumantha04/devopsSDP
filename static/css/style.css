@@ -12,5 +12,6 @@ table {
 }
 
 h2 {
-    color: #53d816;
+    color: purple;
+    text-decoration: underline;
 }

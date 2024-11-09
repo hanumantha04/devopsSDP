@@ -16,7 +16,7 @@
             <td>{{ item.name }}</td>
             <td>{{ item.description }}</td>
             <td>
-                <a href="{{ url_for('update', id=item.id) }}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{{ url_for('update', id=item.id) }}" class="btn btn-warning btn-sm" >Edit</a>
                 <a href="{{ url_for('delete', id=item.id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</a>
             </td>
         </tr>
